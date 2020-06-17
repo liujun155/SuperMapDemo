@@ -1,0 +1,32 @@
+﻿<Window x:Class="SuperMapDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMapDemo"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" Closing="Window_Closing"
+        Title="MainWindow" Height="750" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Center" FontSize="16" Margin="10 0 0 0">超图GIS</TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="showTwo" Click="TwoOrThreeDShow">二维</Button>
+            <Button x:Name="showThree" Click="TwoOrThreeDShow" Margin="10 0">三维</Button>
+            <Button x:Name="showAll" Click="TwoOrThreeDShow" Margin="0 0 10 0">对比</Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <wfi:WindowsFormsHost Name="twoDMap"></wfi:WindowsFormsHost>
+            <GridSplitter Grid.Column="1" Width="3" HorizontalAlignment="Stretch"></GridSplitter>
+            <wfi:WindowsFormsHost Grid.Column="2" Name="threeDMap"></wfi:WindowsFormsHost>
+        </Grid>
+    </Grid>
+</Window>
