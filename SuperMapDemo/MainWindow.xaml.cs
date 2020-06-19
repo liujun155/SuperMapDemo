@@ -24,7 +24,7 @@ namespace SuperMapDemo
         {
             #region 加载二维地图
             m_workspace = new Workspace();
-            m_workspace.Open(new WorkspaceConnectionInfo(@"D:\DevelopUtil\SuperMap\SampleData\China\China100\China.smwu"));
+            m_workspace.Open(new WorkspaceConnectionInfo(@"D:\DevelopUtil\SuperMap\SampleData\City\Changchun.smwu"));
             m_mapControl = new MapControl();
             m_mapControl.Action = SuperMap.UI.Action.Pan;
             //必须设置
@@ -37,12 +37,12 @@ namespace SuperMapDemo
 
             #region 加载三维地图
             m_workspace = new Workspace();
-            m_workspace.Open(new WorkspaceConnectionInfo(@"D:\DevelopUtil\SuperMap\SampleData\3D\CBDDataset\CBD.smwu"));
+            m_workspace.Open(new WorkspaceConnectionInfo(@"D:\DevelopUtil\SuperMap\SampleData\City\Changchun.smwu"));
             m_sceneControl = new SceneControl(SuperMap.Realspace.SceneType.Globe);
             m_sceneControl.Action = Action3D.Pan;
             //必须设置
             m_sceneControl.Scene.Workspace = m_workspace;
-            m_sceneControl.Scene.Open(m_workspace.Scenes[0]);
+            //m_sceneControl.Scene.Open(m_workspace.Scenes[0]);
             //赋值给前端控件hostMapControl
             this.threeDMap.Child = m_sceneControl;
             #endregion

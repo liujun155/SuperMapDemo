@@ -34,21 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SuperMap.Data, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=AMD64">
+    <Reference Include="SuperMap.Data, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevelopUtil\SuperMap\supermap-iobjectsdotnet-10.0.1-18027-76100-all\Bin\SuperMap.Data.dll</HintPath>
+      <HintPath>..\..\..\DevelopUtil\SuperMap\Bin\SuperMap.Data.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.Mapping, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=AMD64">
+    <Reference Include="SuperMap.Mapping, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevelopUtil\SuperMap\supermap-iobjectsdotnet-10.0.1-18027-76100-all\Bin\SuperMap.Mapping.dll</HintPath>
+      <HintPath>..\..\..\DevelopUtil\SuperMap\Bin\SuperMap.Mapping.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.Realspace, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=AMD64">
+    <Reference Include="SuperMap.Realspace, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevelopUtil\SuperMap\supermap-iobjectsdotnet-10.0.1-18027-76100-all\Bin\SuperMap.Realspace.dll</HintPath>
+      <HintPath>..\..\..\DevelopUtil\SuperMap\Bin\SuperMap.Realspace.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.UI.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=AMD64">
+    <Reference Include="SuperMap.UI.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevelopUtil\SuperMap\supermap-iobjectsdotnet-10.0.1-18027-76100-all\Bin\SuperMap.UI.Controls.dll</HintPath>
+      <HintPath>..\..\..\DevelopUtil\SuperMap\Bin\SuperMap.UI.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
